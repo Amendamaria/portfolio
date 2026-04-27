@@ -207,9 +207,11 @@
   .hero-cta {
     text-align: right;
     align-self: end;
+    display: inline-flex;
+    gap: 24px;
   }
   .btn-link {
-    display: inline-block;
+  
     font-family: var(--sans);
     font-size: 0.72rem;
     font-weight: 400;
@@ -871,5 +873,78 @@
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 60px;
+  }
+}
+/* skills */
+.skills-section {
+  padding: 100px 8%;
+  background: var(--bg);
+  color: var(--black);
+  font-family: var(--sans);
+  
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: var(--serif);
+}
+
+.section-subtitle {
+  color: #a0a0a0;
+  max-width: 500px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.skills-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+border-top: 1px solid var(--border);
+border-bottom: 1px solid var(--border);
+}
+
+
+.skill-card {
+
+ padding: 52px 0;
+    border-bottom: 1px solid var(--border);
+
+    transition: opacity 0.25s ease;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+  .skill-card:nth-child(odd)  { padding-right: 64px; border-right: 1px solid var(--border); }
+  .skill-card:nth-child(even) { padding-left: 64px; }
+
+.skill-card h3 {
+  font-family: var(--serif);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.skill-card ul {
+  list-style: none;
+  font-family: var(--sans);
+  padding: 0;
+}
+
+.skill-card li {
+  margin-bottom: 10px;
+  color: var(--mid);
+  font-size: 0.95rem;
+}
+
+/* Hover effect */
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
