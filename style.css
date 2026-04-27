@@ -239,7 +239,7 @@
     font-weight: 400;
     letter-spacing: 0.26em;
     text-transform: uppercase;
-    color: var(--light);
+    color: var(--mid);
     margin-bottom: 0;
     display: block;
     padding-top: 2px;   /* optical alignment with serif cap-height */
