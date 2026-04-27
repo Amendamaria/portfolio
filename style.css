@@ -1,3 +1,7 @@
+/* =========================
+   RESET + BASE
+========================= */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -13,18 +17,106 @@
   --sans: 'Inter', system-ui, sans-serif;
 }
 
+html { scroll-behavior: smooth; }
 
-  html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--black);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
 
-  body {
-    font-family: var(--sans);
-    background: var(--bg);
-    color: var(--black);
-    font-size: 16px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
+/* =========================
+   DARK MODE (CLEAN VERSION)
+========================= */
 
+body.dark {
+  background: #0e0e0e;
+  color: #f5f5f5;
+}
+
+/* TEXT */
+body.dark p,
+body.dark li,
+body.dark .footer-note,
+body.dark .footer-meta,
+body.dark .section-subtitle {
+  color: #a0a0a0;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark .hero-headline,
+body.dark .work-title,
+body.dark .cs-title {
+  color: #ffffff;
+}
+
+/* BORDERS */
+body.dark hr.rule,
+body.dark .work-item,
+body.dark .skill-card,
+body.dark .cs-section-label,
+body.dark .cs-list li,
+body.dark .principle,
+body.dark .exp-right,
+body.dark .exp-item::after {
+  border-color: #2a2a2a;
+}
+
+/* HEADER */
+body.dark header {
+  background: rgba(14,14,14,0.9);
+}
+
+/* NAV */
+body.dark .topbar-nav a {
+  color: #888;
+}
+body.dark .topbar-nav a:hover {
+  color: #fff;
+}
+
+/* LINKS */
+body.dark a {
+  color: #f5f5f5;
+}
+
+/* HERO */
+body.dark .hero-sub {
+  color: #b0b0b0;
+}
+
+/* WORK */
+body.dark .work-desc {
+  color: #b0b0b0;
+}
+body.dark .work-item:hover {
+  opacity: 0.85;
+}
+
+/* ABOUT */
+body.dark .about-content p {
+  color: #b0b0b0;
+}
+
+/* EXPERIENCE */
+body.dark .exp-item p {
+  color: #b0b0b0;
+}
+
+/* FOOTER */
+body.dark .footer {
+  background: #0e0e0e;
+}
+
+/* IMAGES */
+body.dark img {
+  opacity: 0.92;
+}
   /* ── LAYOUT ── */
   .container {
     max-width: var(--max);
@@ -48,7 +140,7 @@
     /* subtle blur + fade for premium feel */
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    background: rgba(249,249,248,0.94);
+    background: var(--bg);
   }
   .topbar {
     padding: 20px 0 18px;
@@ -970,4 +1062,105 @@ border-bottom: 1px solid var(--border);
   .skills-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* =========================
+   DARK MODE VARIABLES
+========================= */
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --border: #e5e5e5;
+}
+
+body.dark {
+  --bg: #0f0f0f;
+  --text: #f5f5f5;
+  --muted: #aaaaaa;
+  --border: #2a2a2a;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+p, span, li {
+  color: var(--muted);
+}
+
+h1, h2, h3 {
+  color: var(--text);
+}
+
+.rule {
+  border-color: var(--border);
+}
+
+/* Cards / sections (safe override) */
+.work-item,
+.skill-card,
+.exp-item {
+  background: transparent;
+  border-color: var(--border);
+}
+
+/* =========================
+   DARK MODE FIX - EXPERIENCE
+========================= */
+
+body.dark .experience-section {
+  background: #0e0e0e;
+  color: #f5f5f5;
+}
+
+body.dark .exp-label {
+  color: #888;
+}
+
+body.dark .exp-right {
+  border-left: 1px solid #2a2a2a;
+}
+
+body.dark .exp-item h3 {
+  color: #ffffff;
+}
+
+body.dark .exp-item p {
+  color: #b0b0b0;
+}
+
+body.dark .exp-item::after {
+  background: #2a2a2a;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  color: var(--black);
+}
+
+/* Hover */
+.theme-toggle:hover {
+  border-color: var(--black);
+}
+
+/* Dark mode */
+body.dark .theme-toggle {
+  border-color: #2a2a2a;
+  color: #ffffff;
+}
+
+body.dark .theme-toggle:hover {
+  border-color: #ffffff;
 }

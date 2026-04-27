@@ -48,3 +48,29 @@ window.addEventListener("scroll", () => {
     card.style.transition = "all 0.6s ease";
     observer.observe(card);
   });
+
+const toggleBtn = document.getElementById("theme-toggle");
+const iconMoon = document.getElementById("icon-moon");
+const iconSun = document.getElementById("icon-sun");
+
+// Load saved theme
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+  iconMoon.style.display = "none";
+  iconSun.style.display = "block";
+}
+
+// Toggle
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+    iconMoon.style.display = "none";
+    iconSun.style.display = "block";
+  } else {
+    localStorage.setItem("theme", "light");
+    iconMoon.style.display = "block";
+    iconSun.style.display = "none";
+  }
+});
