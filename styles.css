@@ -207,7 +207,7 @@
   .hero-cta {
     text-align: right;
     align-self: end;
-    display: inline-flex;
+    display: flex;
     gap: 24px;
   }
   .btn-link {
