@@ -539,71 +539,92 @@
 }
 
   /* ── PROOF ── */
- .recognition {
-  padding: 140px 0;
-}
 
-.recognition-wrap {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 100px;
-}
 
-/* TIMELINE STYLE */
-.recognition-list {
-  position: relative;
-  padding-left: 30px;
-}
-
-/* vertical line */
-.recognition-list::before {
-  content: "";
-  position: absolute;
-  left: 8px;
-  top: 0;
-  width: 1px;
-  height: 100%;
-  background: var(--border);
-}
-
-/* each row */
-.rec-row {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-/* dot */
-.rec-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--black);
-  border-radius: 50%;
-  margin-top: 8px;
-  flex-shrink: 0;
-}
-
-/* content */
-.rec-content h3 {
+.experience-section {
+padding-left: 13em;
+padding-top: 100px;
+padding-bottom: 100px;
+  background: #f9f9f9;
   font-family: var(--serif);
-  font-size: 18px;
-  margin-bottom: 6px;
+  color: #111;
 }
 
-.rec-content p {
-  font-size: 14px;
-  color: var(--mid);
-  max-width: 500px;
+.exp-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+}
+
+/* LEFT SIDE */
+.exp-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #888;
+  margin-top: 10px;
+}
+
+/* RIGHT SIDE */
+.exp-right {
+  border-left: 1px solid #e0e0e0;
+  padding-left: 40px;
+}
+
+/* ITEM */
+.exp-item {
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+.exp-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.exp-item p {
+  font-family: var(--sans);
+  color: #666;
   line-height: 1.6;
+  max-width: 600px;
 }
 
-/* responsive */
-@media (max-width: 900px) {
-  .recognition-wrap {
+/* Hover effect */
+.exp-item:hover {
+  transform: translateX(6px);
+}
+
+/* Highlight important items */
+.highlight h3 {
+  font-weight: 600;
+}
+
+/* Subtle divider between items */
+.exp-item:not(:last-child)::after {
+  content: "";
+  display: block;
+  margin-top: 25px;
+  width: 60px;
+  height: 1px;
+  background: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .exp-container {
     grid-template-columns: 1fr;
   }
+
+  .exp-right {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .exp-label {
+    margin-bottom: 20px;
+  }
 }
+
  /* FOOTER */
 .footer {
   padding: 80px 0;
