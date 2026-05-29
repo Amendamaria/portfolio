@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import WeatherCanvas from "@/components/WeatherCanvas";
 import ScrollReveal from "@/components/ScrollReveal";
-import SpeakingAvatar from "@/components/SpeakingAvatar";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -50,7 +49,6 @@ export default function RootLayout({
         <WeatherCanvas />
         <CustomCursor />
         <ScrollReveal />
-        <SpeakingAvatar />
       </body>
     </html>
   );

@@ -339,7 +339,13 @@ export default function HeroAvatar() {
   };
 
   return (
-    <div className="hero-avatar-card reveal delay-3" ref={containerRef}>
+    <div 
+      className="hero-avatar-card" 
+      ref={containerRef}
+      onClick={handleTriggerGreeting}
+      style={{ cursor: "pointer" }}
+      title="Click to hear greeting"
+    >
       {/* 3D Viewport */}
       <div className="hero-avatar-viewport">
         <canvas ref={canvasRef} className="hero-canvas-el" />
@@ -347,36 +353,24 @@ export default function HeroAvatar() {
         {isLoading && (
           <div className="hero-avatar-loading">
             <div className="hero-spinner"></div>
-            <span>Preparing 3D Experience...</span>
+            <span>Loading 3D Portfolio...</span>
           </div>
         )}
 
-        {isSpeaking && (
-          <div className="hero-waveform-overlay">
-            <span></span><span></span><span></span><span></span><span></span>
-          </div>
-        )}
-      </div>
-
-      {/* Greeting Bubble & Interactive Button */}
-      <div className="hero-avatar-speech-panel">
-        {isBlocked && (
-          <button className="hero-unmute-btn" onClick={handleMutedSpeechClick}>
-            <span className="unmute-icon">🔊</span> Hear Welcome Greeting
-          </button>
-        )}
-
-        {activeSpeech && !isBlocked && (
-          <div className="hero-speech-bubble">
-            <p className="hero-bubble-text">{activeSpeech}</p>
-          </div>
-        )}
-
-        {!activeSpeech && !isBlocked && !isLoading && (
-          <button className="hero-speak-again-btn" onClick={handleTriggerGreeting}>
-            👋 Click to Say Hello
-          </button>
-        )}
+        {/* Audio status indicator */}
+        <div className="hero-audio-overlay">
+          {isSpeaking ? (
+            <div className="audio-wave-anim">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          ) : (
+            <div className="audio-wave-idle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12 3v18c-4.97 0-9-4.03-9-9s4.03-9 9-9zm2 3.86c2.83.48 5 2.94 5 5.92s-2.17 5.44-5 5.92V18.8c3.93-.49 7-3.85 7-7.94s-3.07-7.45-7-7.94v2.06z"/>
+              </svg>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
