@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroAvatar from "@/components/HeroAvatar";
 
 export const metadata: Metadata = {
   title: "Amenda Maria Johnson — Product Designer",
@@ -12,21 +13,25 @@ export default function Home() {
       {/* HERO */}
       <section id="hero" className="hero">
         <div className="container hero-grid">
-          <p className="hero-eyebrow reveal">Product Designer • India → Global</p>
+          <div className="hero-text-block">
+            <p className="hero-eyebrow reveal">Product Designer • India → Global</p>
 
-          <h1 className="hero-headline reveal delay-1">
-            Designing systems that solve real-world complexity
-          </h1>
+            <h1 className="hero-headline reveal delay-1">
+              Designing systems that solve real-world complexity
+            </h1>
 
-          <p className="hero-sub reveal delay-2">
-            I design scalable digital experiences across AI, healthcare, and learning platforms — turning complex workflows
-            into intuitive, user-centered systems.
-          </p>
+            <p className="hero-sub reveal delay-2">
+              I design scalable digital experiences across AI, healthcare, and learning platforms — turning complex workflows
+              into intuitive, user-centered systems.
+            </p>
 
-          <div className="hero-cta reveal delay-3">
-            <a href="/case-studies" className="btn-link">View Case Studies</a>
-            <a href="/Amenda Maria Johnson.pdf" className="btn-link" download>Download Resume</a>
+            <div className="hero-cta reveal delay-3">
+              <a href="/case-studies" className="btn-link">View Case Studies</a>
+              <a href="/Amenda Maria Johnson.pdf" className="btn-link" download>Download Resume</a>
+            </div>
           </div>
+
+          <HeroAvatar />
         </div>
       </section>
 
