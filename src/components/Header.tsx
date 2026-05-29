@@ -25,14 +25,29 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Theme management (matches original script.js logic)
+  // Theme and Season management (matches original script.js logic)
   useEffect(() => {
+    // 1. Theme setup
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
     const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     const initialTheme = savedTheme || systemTheme;
     
     setTheme(initialTheme);
     applyTheme(initialTheme);
+
+    // 2. Season setup
+    const getSystemSeason = () => {
+      const month = new Date().getMonth();
+      if (month === 10 || month === 11 || month === 0 || month === 1) return "winter";
+      if (month === 2 || month === 3) return "spring";
+      if (month === 4 || month === 5) return "summer";
+      return "monsoon";
+    };
+    const season = getSystemSeason();
+    document.documentElement.classList.remove("season-winter", "season-spring", "season-summer", "season-monsoon");
+    document.body.classList.remove("season-winter", "season-spring", "season-summer", "season-monsoon");
+    document.documentElement.classList.add(`season-${season}`);
+    document.body.classList.add(`season-${season}`);
   }, []);
 
   const applyTheme = (newTheme: "light" | "dark") => {
