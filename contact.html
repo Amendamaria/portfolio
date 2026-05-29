@@ -1,105 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact — Amenda Maria Johnson</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Amenda Maria Johnson</title>
+  <meta name="description"
+    content="Get in touch with Amenda Maria Johnson, Product Designer open to global product design roles." />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 
-<link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- HEADER (same as index) -->
-<header>
-  <div class="container">
-    <div class="topbar">
-      <div class="topbar-inner">
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <div class="topbar-inner">
+          <a href="index.html#hero" class="topbar-name">AMJ</a>
 
-        <a href="index.html#hero" class="topbar-name">AMJ</a>
+          <nav>
+            <ul class="topbar-nav" id="topbar-nav">
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#skills">Skills</a></li>
+              <li><a href="case-studies.html">Case Studies</a></li>
+              <li><a href="contact.html" class="nav-active">Contact</a></li>
+            </ul>
+          </nav>
 
-        <nav>
-          <ul class="topbar-nav" id="topbar-nav">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#work">Work</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-            <li><a href="case-studies.html">Case Studies</a></li>
-            <li><a href="contact.html" class="nav-active">Contact</a></li>
-               <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-  
-  <!-- Moon Icon (default) -->
-  <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
-    <path fill="currentColor" d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/>
-  </svg>
+          <div class="topbar-controls">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+              <!-- Moon Icon -->
+              <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path fill="currentColor" d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z" />
+              </svg>
+              <!-- Sun Icon -->
+              <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                style="display: none;">
+                <circle cx="12" cy="12" r="5" fill="currentColor" />
+                <g stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="4" />
+                  <line x1="12" y1="20" x2="12" y2="23" />
+                  <line x1="4.2" y1="4.2" x2="6.3" y2="6.3" />
+                  <line x1="17.7" y1="17.7" x2="19.8" y2="19.8" />
+                  <line x1="1" y1="12" x2="4" y2="12" />
+                  <line x1="20" y1="12" x2="23" y2="12" />
+                  <line x1="4.2" y1="19.8" x2="6.3" y2="17.7" />
+                  <line x1="17.7" y1="6.3" x2="19.8" y2="4.2" />
+                </g>
+              </svg>
+            </button>
 
-  <!-- Sun Icon -->
-  <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" style="display: none;">
-    <circle cx="12" cy="12" r="5" fill="currentColor"/>
-    <g stroke="currentColor" stroke-width="2">
-      <line x1="12" y1="1" x2="12" y2="4"/>
-      <line x1="12" y1="20" x2="12" y2="23"/>
-      <line x1="4.2" y1="4.2" x2="6.3" y2="6.3"/>
-      <line x1="17.7" y1="17.7" x2="19.8" y2="19.8"/>
-      <line x1="1" y1="12" x2="4" y2="12"/>
-      <line x1="20" y1="12" x2="23" y2="12"/>
-      <line x1="4.2" y1="19.8" x2="6.3" y2="17.7"/>
-      <line x1="17.7" y1="6.3" x2="19.8" y2="4.2"/>
-    </g>
-  </svg>
-
-</button>
-          </ul>
-        </nav>
-
-        <button class="topbar-menu-btn" id="menu-btn">
-          <span></span><span></span><span></span>
-        </button>
-
+            <button class="topbar-menu-btn" id="menu-btn" aria-label="Toggle navigation menu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <hr class="rule" />
-  </div>
-</header>
+  </header>
 
-<!-- CONTACT PAGE -->
-<section class="contact-page">
-  <div class="container contact-grid">
+  <!-- CONTACT CONTENT -->
+  <section class="contact-page">
+    <div class="container contact-grid">
 
-    <!-- LEFT -->
-    <div class="contact-left">
-      <span class="section-label">Contact</span>
+      <!-- LEFT INFO PANEL -->
+      <div class="contact-left reveal">
+        <span class="section-label">Contact</span>
+        <h1 class="contact-title">Let’s build something meaningful together.</h1>
+        <p class="contact-desc">
+          Open to global product design roles, design consulting, and collaborations on AI-driven systems or early-stage
+          products.
+        </p>
 
-      <h1 class="contact-title">
-        Let’s build something meaningful together.
-      </h1>
-    </div>
+        <div class="contact-links">
+          <a href="mailto:amendamariajohn@gmail.com" class="contact-email-link">
+            amendamariajohn@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/amenda-maria-johnson/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href="Amenda Maria Johnson.pdf" target="_blank" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
 
-    <!-- RIGHT -->
-    <div class="contact-right">
+      <!-- RIGHT FORM PANEL -->
+      <div class="contact-right reveal delay-1">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xvonzpge" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
 
-      <p class="contact-desc">
-        Open to global product design roles, especially in AI-driven and early-stage environments.
-      </p>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="_replyto" required placeholder="your.email@example.com" />
+          </div>
 
-      <a href="mailto:amendamariajohn@gmail.com" class="contact-email">
-        amendamariajohn@gmail.com
-      </a>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required rows="5"
+              placeholder="Tell me about your project or role..."></textarea>
+          </div>
 
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/amenda-maria-johnson/">LinkedIn</a>
-        <a href="#">Portfolio</a>
-        <a href="Amenda Maria Johnson.pdf">Resume</a>
+          <button type="submit" class="form-btn">Send Message</button>
+        </form>
       </div>
 
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-left reveal">
+        <p class="footer-name">Amenda Maria Johnson</p>
+        <p class="footer-note">
+          Product Designer crafting systems that bring clarity, efficiency, and real-world impact.
+        </p>
+      </div>
+      <div class="footer-links reveal delay-1">
+        <a href="index.html#work">Work</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-right reveal delay-2">
+        <p class="footer-meta">
+          Let’s build meaningful digital products.<br />
+          Open to global opportunities.
+        </p>
+        <p class="footer-copy">© 2026</p>
+      </div>
+    </div>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: Beyond Syllabus — Amenda Maria Johnson</title>
+  <meta name="description"
+    content="Designing an adaptive learning system that moves students beyond rigid academic structures into real-world, skill-driven learning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <div class="topbar-inner">
+          <a href="index.html#hero" class="topbar-name">AMJ</a>
+
+          <nav>
+            <ul class="topbar-nav" id="topbar-nav">
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#skills">Skills</a></li>
+              <li><a href="case-studies.html" class="nav-active">Case Studies</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="topbar-controls">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+              <!-- Moon Icon -->
+              <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path fill="currentColor" d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z" />
+              </svg>
+              <!-- Sun Icon -->
+              <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                style="display: none;">
+                <circle cx="12" cy="12" r="5" fill="currentColor" />
+                <g stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="4" />
+                  <line x1="12" y1="20" x2="12" y2="23" />
+                  <line x1="4.2" y1="4.2" x2="6.3" y2="6.3" />
+                  <line x1="17.7" y1="17.7" x2="19.8" y2="19.8" />
+                  <line x1="1" y1="12" x2="4" y2="12" />
+                  <line x1="20" y1="12" x2="23" y2="12" />
+                  <line x1="4.2" y1="19.8" x2="6.3" y2="17.7" />
+                  <line x1="17.7" y1="6.3" x2="19.8" y2="4.2" />
+                </g>
+              </svg>
+            </button>
+
+            <button class="topbar-menu-btn" id="menu-btn" aria-label="Toggle navigation menu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CASE STUDY HERO -->
+  <section class="cs-detail-hero">
+    <div class="container">
+      <p class="cs-detail-meta">Case Study 03 / 04</p>
+      <h1 class="cs-detail-title">Beyond Syllabus</h1>
+      <p class="cs-detail-subtitle">
+        Designing an adaptive learning system that moves students beyond rigid academic structures into self-directed,
+        skill-driven learning paths.
+      </p>
+
+      <div class="cs-meta-strip">
+        <div class="cs-meta-item">
+          <span>Role</span>
+          <p>Product Designer & UX Researcher</p>
+        </div>
+        <div class="cs-meta-item">
+          <span>Timeline</span>
+          <p>4 Weeks</p>
+        </div>
+        <div class="cs-meta-item">
+          <span>Focus</span>
+          <p>Self-Directed Learning Architecture</p>
+        </div>
+        <div class="cs-meta-item">
+          <span>Context</span>
+          <p>EdTech Platform</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY CONTENT -->
+  <section class="cs-detail-body">
+    <div class="container cs-detail-grid">
+
+      <!-- TOC SIDEBAR -->
+      <aside class="cs-detail-sidebar">
+        <ul class="cs-detail-toc">
+          <li><a href="#context" class="active">Context</a></li>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#opportunity">Opportunity</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#systemdesign">System Design</a></li>
+          <li><a href="#decisions">Key Decisions</a></li>
+          <li><a href="#tradeoffs">Trade-offs</a></li>
+          <li><a href="#impact">Impact</a></li>
+        </ul>
+      </aside>
+
+      <!-- CONTENT BODY -->
+      <div class="cs-detail-content">
+
+        <div id="context" class="cs-content-section reveal">
+          <h2>Context</h2>
+          <p>
+            Traditional higher education structures are built around rigid, static curricula. These pathways often lag
+            behind rapid industry changes, leaving students with theoretical knowledge but a severe deficit in the
+            practical, adaptive skills required by modern global employers.
+          </p>
+        </div>
+
+        <div id="problem" class="cs-content-section reveal">
+          <h2>Problem</h2>
+          <p>
+            Existing learning management software focuses primarily on top-down content delivery (PDF uploads and
+            lecture videos) rather than active guidance. Students feel overwhelmed trying to identify what they need to
+            learn, why it is relevant, and how to apply it outside exam halls.
+          </p>
+        </div>
+
+        <div id="opportunity" class="cs-content-section reveal">
+          <h2>Opportunity</h2>
+          <p>
+            By designing an intent-first, interactive recommendation engine, we can empower students to state their
+            career goals and dynamically map required skill pathways, turning passive content absorption into active,
+            self-directed exploration.
+          </p>
+        </div>
+
+        <div id="approach" class="cs-content-section reveal">
+          <h2>Approach</h2>
+          <p>
+            We structured the design around goal setting and intent capturing. Rather than choosing a course catalog
+            from a dropdown list, students begin by identifying an output milestone (e.g., "Build a React Web
+            Application"). The UX maps prerequisites dynamically.
+          </p>
+
+          <div class="cs-image-container">
+            <img src="adaptive-learning-flow-diagram.svg" alt="Beyond Syllabus Adaptive Flow"
+              style="padding: 40px; background-color: var(--bg-dots); max-width: 450px; margin: 0 auto; display: block;" />
+            <div class="cs-image-caption">
+              Skill Mapping System Flow: Capturing learning goals and structuring modules to support progressive
+              disclosure.
+            </div>
+          </div>
+        </div>
+
+        <div id="solution" class="cs-content-section reveal">
+          <h2>Solution</h2>
+          <p>
+            Beyond Syllabus is designed to serve as an interactive, adaptive navigator. I designed interfaces that
+            prioritize task progress and minimize dashboard clutter:
+          </p>
+          <ul>
+            <li><strong>Intent-Based Intake:</strong> Clean prompts to quickly declare target roles or immediate skill
+              needs.</li>
+            <li><strong>Dynamic Learning Trees:</strong> Modular paths that adjust and reveal lessons based on user
+              milestones.</li>
+            <li><strong>Cross-Domain Exploration:</strong> Interactive side panels to easily explore peripheral topics
+              without losing progress.</li>
+            <li><strong>Actionable Projects:</strong> Anchoring every skill module with a real-world, buildable outcome.
+            </li>
+          </ul>
+
+          <div class="cs-image-container">
+            <img src="MacBook Air - 3 (2).png" alt="Beyond Syllabus Interface" />
+            <div class="cs-image-caption">
+              Interface Overview: The dynamic workspace showcasing current milestones, skill node progress, and
+              recommended resources.
+            </div>
+          </div>
+        </div>
+
+        <div id="systemdesign" class="cs-content-section reveal">
+          <h2>System Design</h2>
+          <p>
+            The experience runs on an organized, four-stage structural flow:
+          </p>
+          <ul>
+            <li><strong>User Intent Layer:</strong> Captures goals and current knowledge baselines.</li>
+            <li><strong>AI Guidance Layer:</strong> Distills complex career paths into sub-skills and sequenced modules.
+            </li>
+            <li><strong>Content Curation Layer:</strong> Aggregates and pairs quality open-source materials with
+              lessons.</li>
+            <li><strong>Evaluation & Navigation Layer:</strong> Validates proof of work to unlock adjacent modules.</li>
+          </ul>
+        </div>
+
+        <div id="decisions" class="cs-content-section reveal">
+          <h2>Key Decisions</h2>
+          <p>
+            To create an interface that motivates users to learn consistently:
+          </p>
+          <ul>
+            <li><strong>Intent over Catalogs:</strong> Removed traditional search filters in favor of a clean,
+              conversational search bar.</li>
+            <li><strong>Exploratory Pathways:</strong> Allowed students to branch into side-tracks without failing or
+              resetting active modules.</li>
+            <li><strong>Card-Based Hierarchy:</strong> Represented modules as high-level cards displaying estimated
+              completion times to manage student energy.</li>
+          </ul>
+        </div>
+
+        <div id="tradeoffs" class="cs-content-section reveal">
+          <h2>Trade-offs</h2>
+          <p>
+            Decisions made to protect simplicity and launch speed:
+          </p>
+          <ul>
+            <li><strong>Simplified Tracking:</strong> We prioritized manual check-off logs rather than automated code
+              tracking, reducing integration complexity.</li>
+            <li><strong>Muted Gamification:</strong> Avoided badges and points to focus on internal motivation and
+              tangible project building.</li>
+            <li><strong>Limited Content Curation:</strong> Curated high-impact, open-source resources instead of
+              designing proprietary educational content from scratch.</li>
+          </ul>
+        </div>
+
+        <div id="impact" class="cs-content-section reveal">
+          <h2>Impact</h2>
+          <p>
+            Beyond Syllabus empowers students to bridge the gap between academic theory and industry execution.
+          </p>
+          <blockquote>
+            "By prioritizing intent-driven mapping over linear course schedules, user onboarding engagement rates grew
+            by 55%."
+          </blockquote>
+          <p>
+            The platform design proves that organizing information around user-led milestones increases self-directed
+            learning success.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT CASE STUDY NAVIGATOR -->
+  <section class="next-cs-nav">
+    <div class="container">
+      <span>Next Project</span>
+      <a href="case-study-purple-movement.html">Purple Movement</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <p class="footer-name">Amenda Maria Johnson</p>
+        <p class="footer-note">
+          Product Designer crafting systems that bring clarity, efficiency, and real-world impact.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#work">Work</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-right">
+        <p class="footer-meta">
+          Let’s build meaningful digital products.<br />
+          Open to global opportunities.
+        </p>
+        <p class="footer-copy">© 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

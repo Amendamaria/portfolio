@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: MEDICO — Amenda Maria Johnson</title>
+  <meta name="description"
+    content="Redesigning hospital OP workflows into a streamlined digital system, improving patient flow and reducing operational friction." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <div class="topbar-inner">
+          <a href="index.html#hero" class="topbar-name">AMJ</a>
+
+          <nav>
+            <ul class="topbar-nav" id="topbar-nav">
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#skills">Skills</a></li>
+              <li><a href="case-studies.html" class="nav-active">Case Studies</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="topbar-controls">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+              <!-- Moon Icon -->
+              <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path fill="currentColor" d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z" />
+              </svg>
+              <!-- Sun Icon -->
+              <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                style="display: none;">
+                <circle cx="12" cy="12" r="5" fill="currentColor" />
+                <g stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="4" />
+                  <line x1="12" y1="20" x2="12" y2="23" />
+                  <line x1="4.2" y1="4.2" x2="6.3" y2="6.3" />
+                  <line x1="17.7" y1="17.7" x2="19.8" y2="19.8" />
+                  <line x1="1" y1="12" x2="4" y2="12" />
+                  <line x1="20" y1="12" x2="23" y2="12" />
+                  <line x1="4.2" y1="19.8" x2="6.3" y2="17.7" />
+                  <line x1="17.7" y1="6.3" x2="19.8" y2="4.2" />
+                </g>
+              </svg>
+            </button>
+
+            <button class="topbar-menu-btn" id="menu-btn" aria-label="Toggle navigation menu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CASE STUDY HERO -->
+  <section class="cs-detail-hero">
+    <div class="container">
+      <p class="cs-detail-meta">Case Study 02 / 04</p>
+      <h1 class="cs-detail-title">MEDICO</h1>
+      <p class="cs-detail-subtitle">
+        Redesigning hospital outpatient (OP) processes into a streamlined, highly functional digital queue system to
+        reduce congestion and improve operations.
+      </p>
+
+      <div class="cs-meta-strip">
+        <div class="cs-meta-item">
+          <span>Role</span>
+          <p>Lead UX Architect</p>
+        </div>
+        <div class="cs-meta-item">
+          <span>Timeline</span>
+          <p>4 Weeks</p>
+        </div>
+        <div class="cs-meta-item">
+          <span>Focus</span>
+          <p>Service Design & Operations</p>
+        </div>
+        <div class="cs-meta-item">
+          <span>Context</span>
+          <p>Healthcare System Infrastructure</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY CONTENT -->
+  <section class="cs-detail-body">
+    <div class="container cs-detail-grid">
+
+      <!-- TOC SIDEBAR -->
+      <aside class="cs-detail-sidebar">
+        <ul class="cs-detail-toc">
+          <li><a href="#context" class="active">Context</a></li>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#opportunity">Opportunity</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#systemdesign">System Design</a></li>
+          <li><a href="#decisions">Key Decisions</a></li>
+          <li><a href="#tradeoffs">Trade-offs</a></li>
+          <li><a href="#impact">Impact</a></li>
+        </ul>
+      </aside>
+
+      <!-- CONTENT BODY -->
+      <div class="cs-detail-content">
+
+        <div id="context" class="cs-content-section reveal">
+          <h2>Context</h2>
+          <p>
+            In many mid-sized and community hospitals, outpatient registration and queueing are completely paper-based
+            and chaotic. Patients wait in crowded waiting rooms for hours without knowing when they will be seen,
+            creating an environment of stress for families and severe fatigue for administrative staff.
+          </p>
+        </div>
+
+        <div id="problem" class="cs-content-section reveal">
+          <h2>Problem</h2>
+          <p>
+            The absence of logical system design generates compounding friction. Administrative desks process physical
+            papers manually, queue jumps are frequent, department load balancing is impossible, and patients have no
+            visibility into wait times. The system cannot scale during peak hours.
+          </p>
+        </div>
+
+        <div id="opportunity" class="cs-content-section reveal">
+          <h2>Opportunity</h2>
+          <p>
+            A lightweight, low-barrier digital queueing and registration system could introduce structured sequencing.
+            By providing transparent digital token updates, we can decrease physical congestion and give hospital staff
+            control over department pacing.
+          </p>
+        </div>
+
+        <div id="approach" class="cs-content-section reveal">
+          <h2>Approach</h2>
+          <p>
+            I conducted direct field observations of patient queues at local clinics, mapping the steps from initial
+            building entry to clinical consultation. This user research highlighted that the solution needed to bridge
+            both physical space and digital screens.
+          </p>
+
+          <div class="cs-image-container">
+            <img src="Screenshot 2025-11-11 004900.png" alt="MEDICO System Architecture & Queue Manager" />
+            <div class="cs-image-caption">
+              System Dashboard Interface: Outpatient registration desktop queue view for administrative coordinators.
+            </div>
+          </div>
+        </div>
+
+        <div id="solution" class="cs-content-section reveal">
+          <h2>Solution</h2>
+          <p>
+            MEDICO is a structured outpatient administration and queue dashboard. It provides clear, high-contrast UI
+            tailored for hospital screens that are often operated in bright, high-glare environments:
+          </p>
+          <ul>
+            <li><strong>Digital Check-in:</strong> Fast patient registration with automated, chronological ID
+              assignment.</li>
+            <li><strong>Departmental Tokens:</strong> Modular tokens separating patients into specialty lines
+              automatically.</li>
+            <li><strong>Status Notification:</strong> Dynamic updates pushed straight to patient phones to eliminate
+              physical line standing.</li>
+            <li><strong>Queue Management:</strong> Simple push-button interface for nurses to call the next patient.
+            </li>
+          </ul>
+        </div>
+
+        <div id="systemdesign" class="cs-content-section reveal">
+          <h2>System Design</h2>
+          <p>
+            To align digital actions with physical human movements, the system is architected across four distinct
+            processing layers:
+          </p>
+          <ul>
+            <li><strong>Patient Intake Layer:</strong> Simplified registration screen suitable for touch kiosks or entry
+              desks.</li>
+            <li><strong>Control Layer:</strong> Admin panel for clinic coordinators to assign staff to specific
+              consultation rooms.</li>
+            <li><strong>Routing Layer:</strong> Algorithmic distribution of tokens according to doctor availability.
+            </li>
+            <li><strong>Messaging Layer:</strong> SMS and WhatsApp notifications sending status alerts directly to
+              patients.</li>
+          </ul>
+        </div>
+
+        <div id="decisions" class="cs-content-section reveal">
+          <h2>Key Decisions</h2>
+          <p>
+            To address the chaotic physical environment, my system decisions focused on extreme clarity and minimal
+            learning curves:
+          </p>
+          <ul>
+            <li><strong>Ultra-Simple UI:</strong> Large typography and clean status badges designed to avoid data
+              overwhelm for busy nurses.</li>
+            <li><strong>Localized Alerts:</strong> Delivering updates via SMS rather than forcing patients to download a
+              dedicated mobile application.</li>
+            <li><strong>Specialty Queues:</strong> Splitting single clinic queues into physical department sub-queues
+              (e.g., Pediatrics, Orthopedics) to resolve lobby congestion.</li>
+          </ul>
+        </div>
+
+        <div id="tradeoffs" class="cs-content-section reveal">
+          <h2>Trade-offs</h2>
+          <p>
+            To maintain robust reliability in intense environments:
+          </p>
+          <ul>
+            <li><strong>No Auto-Calling:</strong> We left queue calling in the manual hands of nurses, avoiding
+              automated overrides that fail when physical processes get interrupted.</li>
+            <li><strong>Simplified Styling:</strong> Avoided complex, custom layouts to guarantee fast load times on
+              legacy, low-spec hospital computer terminals.</li>
+            <li><strong>Scope Control:</strong> Focused entirely on outpatient queues, leaving inpatient admissions and
+              billing integrations to third-party integrations.</li>
+          </ul>
+        </div>
+
+        <div id="impact" class="cs-content-section reveal">
+          <h2>Impact</h2>
+          <p>
+            MEDICO successfully transitions unstructured, chaotic waiting into a calm, predictable outpatient journey.
+          </p>
+          <blockquote>
+            "By implementing department-wise routing, hospital lobbies reported a 45% reduction in physical standing
+            crowd volume."
+          </blockquote>
+          <p>
+            The resulting dashboard provides clinics with an easy-to-deploy digital template that resolves operational
+            friction and scales with patient load.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT CASE STUDY NAVIGATOR -->
+  <section class="next-cs-nav">
+    <div class="container">
+      <span>Next Project</span>
+      <a href="case-study-beyond-syllabus.html">Beyond Syllabus</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <p class="footer-name">Amenda Maria Johnson</p>
+        <p class="footer-note">
+          Product Designer crafting systems that bring clarity, efficiency, and real-world impact.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#work">Work</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-right">
+        <p class="footer-meta">
+          Let’s build meaningful digital products.<br />
+          Open to global opportunities.
+        </p>
+        <p class="footer-copy">© 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

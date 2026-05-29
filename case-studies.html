@@ -1,621 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Case Studies — Amenda Maria Johnson</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies — Amenda Maria Johnson</title>
+  <meta name="description"
+    content="Explore product design case studies focusing on AI UX systems, medical workflows, adaptive learning, and community platforms." />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 
-<link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header>
-  <div class="container">
-    <div class="topbar">
-      <div class="topbar-inner">
-        <a href="index.html#hero" class="topbar-name">AMJ</a>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <div class="topbar-inner">
+          <a href="index.html#hero" class="topbar-name">AMJ</a>
 
-        <nav>
-          <ul class="topbar-nav" id="topbar-nav">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#work">Work</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-            <li><a href="case-studies.html" class="nav-active">Case Studies</a></li>
-            <li><a href="contact.html">Contact</a></li>
-             <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-  
-  <!-- Moon Icon (default) -->
-  <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
-    <path fill="currentColor" d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/>
-  </svg>
+          <nav>
+            <ul class="topbar-nav" id="topbar-nav">
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#skills">Skills</a></li>
+              <li><a href="case-studies.html" class="nav-active">Case Studies</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
 
-  <!-- Sun Icon -->
-  <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" style="display: none;">
-    <circle cx="12" cy="12" r="5" fill="currentColor"/>
-    <g stroke="currentColor" stroke-width="2">
-      <line x1="12" y1="1" x2="12" y2="4"/>
-      <line x1="12" y1="20" x2="12" y2="23"/>
-      <line x1="4.2" y1="4.2" x2="6.3" y2="6.3"/>
-      <line x1="17.7" y1="17.7" x2="19.8" y2="19.8"/>
-      <line x1="1" y1="12" x2="4" y2="12"/>
-      <line x1="20" y1="12" x2="23" y2="12"/>
-      <line x1="4.2" y1="19.8" x2="6.3" y2="17.7"/>
-      <line x1="17.7" y1="6.3" x2="19.8" y2="4.2"/>
-    </g>
-  </svg>
+          <div class="topbar-controls">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+              <!-- Moon Icon -->
+              <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path fill="currentColor" d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z" />
+              </svg>
+              <!-- Sun Icon -->
+              <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                style="display: none;">
+                <circle cx="12" cy="12" r="5" fill="currentColor" />
+                <g stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="4" />
+                  <line x1="12" y1="20" x2="12" y2="23" />
+                  <line x1="4.2" y1="4.2" x2="6.3" y2="6.3" />
+                  <line x1="17.7" y1="17.7" x2="19.8" y2="19.8" />
+                  <line x1="1" y1="12" x2="4" y2="12" />
+                  <line x1="20" y1="12" x2="23" y2="12" />
+                  <line x1="4.2" y1="19.8" x2="6.3" y2="17.7" />
+                  <line x1="17.7" y1="6.3" x2="19.8" y2="4.2" />
+                </g>
+              </svg>
+            </button>
 
-</button>
-          </ul>
-        </nav>
-
-        <button class="topbar-menu-btn" id="menu-btn">
-          <span></span><span></span><span></span>
-        </button>
+            <button class="topbar-menu-btn" id="menu-btn" aria-label="Toggle navigation menu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <hr class="rule" />
-  </div>
-</header>
+  </header>
 
-<!-- CASE STUDIES -->
-<section id="case-studies" class="case-studies">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">Case Studies</span>
+  <!-- PORTAL HERO -->
+  <section class="cs-portal-hero">
+    <div class="container reveal">
+      <h1 class="cs-portal-headline">Selected Case Studies</h1>
+      <p class="cs-portal-subtitle">
+        Detailed breakdowns of systems thinking, UX research, operational workflow mapping, and human-AI interaction
+        designs.
+      </p>
     </div>
-  </div>
-  <hr class="rule" />
+  </section>
 
-  <!-- NeuUX AI -->
-  <div id="cs-neuux" class="case-study">
-  <div class="container">
+  <!-- CASE STUDIES PORTAL GRID -->
+  <section class="cs-portal-body">
+    <div class="container">
+      <div class="cs-portal-grid">
 
-    <div class="cs-header">
-      <span class="cs-index">01 / 04</span>
-      <div>
-        <h2 class="cs-title">NeuUX AI</h2>
-        <p class="cs-overview">
-          Designing an AI-powered UX system that transforms raw ideas into structured product thinking — reducing friction in early-stage design workflows.
+        <!-- CARD 01: NeuUX AI -->
+        <article class="cs-card reveal">
+          <div class="cs-card-img-wrapper">
+            <img src="NeuUX AI (5).png" alt="NeuUX AI Case Study Mockup" />
+          </div>
+          <div class="cs-card-body">
+            <div class="cs-card-meta">
+              <span>AI System</span>
+              <span>UX Research</span>
+              <span>3 Weeks</span>
+            </div>
+            <h2 class="cs-card-title">NeuUX AI</h2>
+            <p class="cs-card-excerpt">
+              Designing an AI assistant that structures raw ideas into editable UX deliverables, shifting AI focus from
+              generating visuals to supporting core logic.
+            </p>
+            <a href="case-study-neuux.html" class="cs-card-link">View Case Study</a>
+          </div>
+        </article>
+
+        <!-- CARD 02: MEDICO -->
+        <article class="cs-card reveal">
+          <div class="cs-card-img-wrapper">
+            <img src="Screenshot 2025-11-11 004900.png" alt="MEDICO Hospital Queue Case Study Mockup" />
+          </div>
+          <div class="cs-card-body">
+            <div class="cs-card-meta">
+              <span>Service Design</span>
+              <span>Healthcare</span>
+              <span>4 Weeks</span>
+            </div>
+            <h2 class="cs-card-title">MEDICO</h2>
+            <p class="cs-card-excerpt">
+              Building a structured, multi-layer outpatient management queue system that bridges physical clinic spaces
+              with digital status trackers.
+            </p>
+            <a href="case-study-medico.html" class="cs-card-link">View Case Study</a>
+          </div>
+        </article>
+
+        <!-- CARD 03: Beyond Syllabus -->
+        <article class="cs-card reveal">
+          <div class="cs-card-img-wrapper">
+            <img src="MacBook Air - 3 (2).png" alt="Beyond Syllabus Learning Platform Mockup" />
+          </div>
+          <div class="cs-card-body">
+            <div class="cs-card-meta">
+              <span>EdTech</span>
+              <span>Adaptive UX</span>
+              <span>4 Weeks</span>
+            </div>
+            <h2 class="cs-card-title">Beyond Syllabus</h2>
+            <p class="cs-card-excerpt">
+              Designing an intent-first, interactive learning roadmap platform that moves students away from static
+              curricula toward outcome-based skills.
+            </p>
+            <a href="case-study-beyond-syllabus.html" class="cs-card-link">View Case Study</a>
+          </div>
+        </article>
+
+        <!-- CARD 04: Purple Movement -->
+        <article class="cs-card reveal">
+          <div class="cs-card-img-wrapper">
+            <img src="MacBook Air - 13 (4).png" alt="Purple Movement Civic Platform Mockup" />
+          </div>
+          <div class="cs-card-body">
+            <div class="cs-card-meta">
+              <span>Social Impact</span>
+              <span>Identity Design</span>
+              <span>3 Weeks</span>
+            </div>
+            <h2 class="cs-card-title">Purple Movement</h2>
+            <p class="cs-card-excerpt">
+              Redesigning a civic engagement community platform, building action-oriented pathways that translate
+              philosophy into active campaign volunteers.
+            </p>
+            <a href="case-study-purple-movement.html" class="cs-card-link">View Case Study</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <p class="footer-name">Amenda Maria Johnson</p>
+        <p class="footer-note">
+          Product Designer crafting systems that bring clarity, efficiency, and real-world impact.
         </p>
       </div>
-    </div>
-
-    <div class="cs-body">
-
-      <aside class="cs-toc">
-        <span class="cs-toc-item">Context</span>
-        <span class="cs-toc-item">Problem</span>
-        <span class="cs-toc-item">Opportunity</span>
-        <span class="cs-toc-item">Approach</span>
-        <span class="cs-toc-item">Solution</span>
-        <span class="cs-toc-item">Key Decisions</span>
-        <span class="cs-toc-item">Trade-offs</span>
-        <span class="cs-toc-item">Impact</span>
-      </aside>
-
-      <div class="cs-content">
-
-        <!-- CONTEXT -->
-        <div class="cs-section">
-          <p class="cs-section-label">Context</p>
-          <p class="cs-section-text">
-            In early-stage product development, teams struggle to convert raw ideas into structured UX outputs like personas, journeys, and strategy documents. This creates delays, misalignment, and repeated iterations.
-          </p>
-        </div>
-
-        <!-- PROBLEM -->
-        <div class="cs-section">
-          <p class="cs-section-label">Problem</p>
-          <p class="cs-section-text">
-            UX workflows are fragmented and manual. Designers spend significant time translating ideas into structured artifacts, slowing down decision-making and reducing focus on actual problem-solving.
-          </p>
-        </div>
-
-        <!-- OPPORTUNITY -->
-        <div class="cs-section">
-          <p class="cs-section-label">Opportunity</p>
-          <p class="cs-section-text">
-            If AI could assist in structuring thinking — not just generating content — it could reduce repetitive work and enable designers to focus on higher-level decisions.
-          </p>
-        </div>
-
-        <!-- APPROACH -->
-        <div class="cs-section">
-          <p class="cs-section-label">Approach</p>
-          <p class="cs-section-text">
-            I designed NeuUX AI as a system, not a feature. The focus was on creating a guided, conversational flow that translates a simple project brief into structured UX outputs.
-          </p>
-        </div>
-        <img src="Corrected User Level DFD – NeuUX AI (User on Right).png" alt="NeuUX AI flow" class="cs-visual-img" />
-        
-        <!-- SOLUTION -->
-        <div class="cs-section">
-          <p class="cs-section-label">Solution</p>
-          <p class="cs-section-text">
-            NeuUX AI acts as a UX intelligence assistant that supports the entire early design phase:
-          </p>
-
-          <ul class="cs-list">
-            <li>AI-generated project overview and problem framing</li>
-            <li>Persona generation with editable attributes</li>
-            <li>Journey map creation based on selected personas</li>
-            <li>Conversational refinement of UX outputs</li>
-            <li>Structured storage for scalable workflows</li>
-          </ul>
-
-          <p class="cs-section-text" style="margin-top:14px;">
-            The system is designed to support thinking, not replace it — keeping the designer in control.
-          </p>
-        </div>
-        <img src="NeuUX AI (5).png" alt="NeuUX AI" class="cs-visual-img" />
-
-        <!-- KEY DECISIONS -->
-        <div class="cs-section">
-          <p class="cs-section-label">Key Decisions</p>
-          <ul class="cs-decisions">
-            <li>Shifted from “AI generates UI” → “AI structures UX thinking”</li>
-            <li>Designed modular outputs instead of one-time results</li>
-            <li>Used conversational UI to reduce friction in iteration</li>
-            <li>Ensured outputs are editable, not fixed</li>
-          </ul>
-        </div>
-
-        <!-- TRADE OFFS -->
-        <div class="cs-section">
-          <p class="cs-section-label">Trade-offs</p>
-          <ul class="cs-decisions">
-            <li>Reduced feature complexity to maintain clarity</li>
-            <li>Avoided full automation to preserve designer control</li>
-            <li>Focused on early-stage UX instead of full product lifecycle</li>
-          </ul>
-        </div>
-
-        <!-- IMPACT -->
-        <div class="cs-section">
-          <p class="cs-section-label">Impact</p>
-          <p class="cs-section-text">
-            NeuUX AI reduces the time required to move from idea to structured UX outputs, helping designers and teams align faster and focus on decision-making instead of documentation.
-          </p>
-
-          <p class="cs-section-text" style="margin-top:12px;">
-            By transforming UX into a system-driven process, it creates a scalable approach to early-stage product design.
-          </p>
-        </div>
-
+      <div class="footer-links">
+        <a href="index.html#work">Work</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
       </div>
-    </div>
-  </div>
-</div>
-
-  <!-- MEDICO -->
-  <div id="cs-medico" class="case-study">
-  <div class="container">
-
-    <div class="cs-header">
-      <span class="cs-index">02 / 04</span>
-      <div>
-        <h2 class="cs-title">MEDICO</h2>
-        <p class="cs-overview">
-          Designing a structured outpatient system to replace chaotic hospital queues with a scalable, real-world workflow.
+      <div class="footer-right">
+        <p class="footer-meta">
+          Let’s build meaningful digital products.<br />
+          Open to global opportunities.
         </p>
+        <p class="footer-copy">© 2026</p>
       </div>
     </div>
+  </footer>
 
-    <div class="cs-body">
-
-      <aside class="cs-toc">
-        <span class="cs-toc-item">Context</span>
-        <span class="cs-toc-item">Problem</span>
-        <span class="cs-toc-item">Opportunity</span>
-        <span class="cs-toc-item">Approach</span>
-        <span class="cs-toc-item">Solution</span>
-        <span class="cs-toc-item">System Design</span>
-        <span class="cs-toc-item">Key Decisions</span>
-        <span class="cs-toc-item">Trade-offs</span>
-        <span class="cs-toc-item">Impact</span>
-      </aside>
-
-      <div class="cs-content">
-
-        <!-- CONTEXT -->
-        <div class="cs-section">
-          <p class="cs-section-label">Context</p>
-          <p class="cs-section-text">
-            In many hospitals, outpatient (OP) processes rely on manual registration and unstructured queues. Patients wait without clarity, and staff manage flow through fragmented, error-prone systems.
-          </p>
-        </div>
-
-        <!-- PROBLEM -->
-        <div class="cs-section">
-          <p class="cs-section-label">Problem</p>
-          <p class="cs-section-text">
-            The lack of a structured system creates confusion for patients and operational inefficiency for staff. There is no clear flow, no visibility, and no scalable way to manage patient load.
-          </p>
-        </div>
-
-        <!-- OPPORTUNITY -->
-        <div class="cs-section">
-          <p class="cs-section-label">Opportunity</p>
-          <p class="cs-section-text">
-            A digital system could introduce structure into the OP process — improving clarity for patients while giving hospitals better control over workflow and scalability.
-          </p>
-        </div>
-
-        <!-- APPROACH -->
-        <div class="cs-section">
-          <p class="cs-section-label">Approach</p>
-          <p class="cs-section-text">
-            I mapped the complete patient journey — from entry to consultation — identifying key friction points in registration, token handling, and department flow.
-          </p>
-
-          <p class="cs-section-text" style="margin-top:10px;">
-            The focus was not just on UI, but on designing a system that works within real hospital constraints.
-          </p>
-        </div>
-
-        <img src="Screenshot 2025-11-11 004900.png" alt="MEDICO System" class="cs-visual-img" />
-
-        <!-- SOLUTION -->
-        <div class="cs-section">
-          <p class="cs-section-label">Solution</p>
-          <p class="cs-section-text">
-            MEDICO is a structured OP management system designed to simplify both patient and admin workflows:
-          </p>
-
-          <ul class="cs-list">
-            <li>Digital patient registration with auto-generated IDs</li>
-            <li>Department-based token system for organized flow</li>
-            <li>Integrated payment step for applicable patients</li>
-            <li>Admin dashboard for hospital-level control</li>
-          </ul>
-        </div>
-
-        <!-- SYSTEM DESIGN -->
-        <div class="cs-section">
-          <p class="cs-section-label">System Design</p>
-          <p class="cs-section-text">
-            The system is designed as a multi-layer workflow:
-          </p>
-
-          <ul class="cs-list">
-            <li>Patient Layer → Registration, token generation, visibility</li>
-            <li>Admin Layer → Hospital-specific data and control</li>
-            <li>Flow Layer → Department-wise queue management</li>
-            <li>Output Layer → Virtual token via whatsapp message</li>
-          </ul>
-
-          <p class="cs-section-text" style="margin-top:10px;">
-            This ensures the system works both digitally and physically within hospital environments.
-          </p>
-        </div>
-
-        <!-- KEY DECISIONS -->
-        <div class="cs-section">
-          <p class="cs-section-label">Key Decisions</p>
-          <ul class="cs-decisions">
-            <li>Designed for low-tech environments with minimal learning curve</li>
-            <li>Prioritized clarity and speed over feature overload</li>
-            <li>Separated flows by department to reduce congestion</li>
-          </ul>
-        </div>
-
-        <!-- TRADE OFFS -->
-        <div class="cs-section">
-          <p class="cs-section-label">Trade-offs</p>
-          <ul class="cs-decisions">
-            <li>Limited UI complexity to ensure ease of use for non-technical users</li>
-            <li>Avoided advanced automation to maintain system reliability</li>
-            <li>Focused on OP workflow instead of full hospital system integration</li>
-          </ul>
-        </div>
-
-        <!-- IMPACT -->
-        <div class="cs-section">
-          <p class="cs-section-label">Impact</p>
-          <p class="cs-section-text">
-            MEDICO transforms an unstructured waiting system into a predictable, manageable workflow. Patients gain visibility and clarity, while hospitals gain control and scalability.
-          </p>
-
-          <p class="cs-section-text" style="margin-top:12px;">
-            The system reduces confusion, improves operational efficiency, and creates a foundation for scalable hospital management.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-  <!-- Beyond Syllabus -->
-  <div id="cs-beyond" class="case-study">
-  <div class="container">
-
-    <div class="cs-header">
-      <span class="cs-index">03 / 04</span>
-      <div>
-        <h2 class="cs-title">Beyond Syllabus</h2>
-        <p class="cs-overview">
-          Designing an adaptive learning system that moves students beyond rigid academic structures into real-world, skill-driven learning.
-        </p>
-      </div>
-    </div>
-
-    <div class="cs-body">
-
-      <aside class="cs-toc">
-        <span class="cs-toc-item">Context</span>
-        <span class="cs-toc-item">Problem</span>
-        <span class="cs-toc-item">Opportunity</span>
-        <span class="cs-toc-item">Approach</span>
-        <span class="cs-toc-item">Solution</span>
-        <span class="cs-toc-item">System Design</span>
-        <span class="cs-toc-item">Key Decisions</span>
-        <span class="cs-toc-item">Trade-offs</span>
-        <span class="cs-toc-item">Impact</span>
-      </aside>
-
-      <div class="cs-content">
-
-        <!-- CONTEXT -->
-        <div class="cs-section">
-          <p class="cs-section-label">Context</p>
-          <p class="cs-section-text">
-            Traditional education systems are structured around static curricula, often disconnected from real-world skills and evolving industry needs.
-          </p>
-        </div>
-
-        <!-- PROBLEM -->
-        <div class="cs-section">
-          <p class="cs-section-label">Problem</p>
-          <p class="cs-section-text">
-            Students lack access to flexible, personalized learning paths. Existing platforms focus on content delivery rather than helping users navigate what to learn and why.
-          </p>
-        </div>
-
-        <!-- OPPORTUNITY -->
-        <div class="cs-section">
-          <p class="cs-section-label">Opportunity</p>
-          <p class="cs-section-text">
-            By introducing AI-guided learning flows, it’s possible to shift from static content consumption to dynamic, intent-driven learning experiences.
-          </p>
-        </div>
-
-        <!-- APPROACH -->
-        <div class="cs-section">
-          <p class="cs-section-label">Approach</p>
-          <p class="cs-section-text">
-            Focused on designing a system that adapts to user intent — allowing students to explore topics, get guided direction, and access relevant learning resources without rigid pathways.
-          </p>
-
-          <p class="cs-section-text" style="margin-top:10px;">
-            The goal was to reduce confusion in “what to learn next” and make learning more actionable.
-          </p>
-        </div>
-
-        <img src="MacBook Air - 3 (2).png" alt="Beyond Syllabus System" class="cs-visual-img" />
-
-        <!-- SOLUTION -->
-        <div class="cs-section">
-          <p class="cs-section-label">Solution</p>
-          <p class="cs-section-text">
-            Beyond Syllabus is an AI-assisted learning platform that provides:
-          </p>
-
-          <ul class="cs-list">
-            <li>Intent-based learning guidance</li>
-            <li>Subject-specific and general exploration paths</li>
-            <li>Dynamic content suggestions based on user needs</li>
-            <li>Clear navigation across learning domains</li>
-          </ul>
-
-          <p class="cs-section-text" style="margin-top:14px;">
-            Instead of fixed courses, the system supports flexible, user-driven learning journeys.
-          </p>
-        </div>
-
-        <!-- SYSTEM DESIGN -->
-        <div class="cs-section">
-          <p class="cs-section-label">System Design</p>
-          <p class="cs-section-text">
-            The platform is structured as a layered learning system:
-          </p>
-
-          <ul class="cs-list">
-            <li>User Intent Layer → Captures what the student wants to learn</li>
-            <li>AI Guidance Layer → Suggests direction and pathways</li>
-            <li>Content Layer → Provides relevant learning resources</li>
-            <li>Navigation Layer → Enables exploration across topics</li>
-          </ul>
-
-          <p class="cs-section-text" style="margin-top:10px;">
-            This allows learning to adapt dynamically instead of being pre-defined.
-          </p>
-        </div>
-
-        <!-- KEY DECISIONS -->
-        <div class="cs-section">
-          <p class="cs-section-label">Key Decisions</p>
-          <ul class="cs-decisions">
-            <li>Shifted from content-first → intent-first design</li>
-            <li>Designed for exploration instead of linear progression</li>
-            <li>Reduced cognitive overload through structured guidance</li>
-            <li>Focused on clarity and accessibility for students</li>
-          </ul>
-        </div>
-
-        <!-- TRADE OFFS -->
-        <div class="cs-section">
-          <p class="cs-section-label">Trade-offs</p>
-          <ul class="cs-decisions">
-            <li>Avoided deep personalization complexity to maintain usability</li>
-            <li>Limited content density to prevent overwhelming users</li>
-            <li>Focused on guidance rather than full learning ecosystem integration</li>
-          </ul>
-        </div>
-
-        <!-- IMPACT -->
-        <div class="cs-section">
-          <p class="cs-section-label">Impact</p>
-          <p class="cs-section-text">
-            Beyond Syllabus enables students to navigate learning more independently, reducing confusion around what to learn next and improving engagement with meaningful content.
-          </p>
-
-          <p class="cs-section-text" style="margin-top:12px;">
-            The system shifts learning from passive consumption to active exploration — making it more aligned with real-world skill development.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-  <!-- Purple Movement -->
-  <div id="cs-purple" class="case-study">
-  <div class="container">
-
-    <div class="cs-header">
-      <span class="cs-index">04 / 04</span>
-      <div>
-        <h2 class="cs-title">Purple Movement</h2>
-        <p class="cs-overview">
-          Designing a community platform that translates purpose into participation through clear, structured digital experiences.
-        </p>
-      </div>
-    </div>
-
-    <div class="cs-body">
-
-      <aside class="cs-toc">
-        <span class="cs-toc-item">Context</span>
-        <span class="cs-toc-item">Problem</span>
-        <span class="cs-toc-item">Opportunity</span>
-        <span class="cs-toc-item">Approach</span>
-        <span class="cs-toc-item">Solution</span>
-        <span class="cs-toc-item">Experience Design</span>
-        <span class="cs-toc-item">Key Decisions</span>
-        <span class="cs-toc-item">Trade-offs</span>
-        <span class="cs-toc-item">Impact</span>
-      </aside>
-
-      <div class="cs-content">
-
-        <!-- CONTEXT -->
-        <div class="cs-section">
-          <p class="cs-section-label">Context</p>
-          <p class="cs-section-text">
-            Purpose-driven communities often struggle to communicate their vision clearly in digital spaces, making it difficult for users to understand how to engage or contribute.
-          </p>
-        </div>
-
-        <!-- PROBLEM -->
-        <div class="cs-section">
-          <p class="cs-section-label">Problem</p>
-          <p class="cs-section-text">
-            The platform lacked a clear structure for presenting initiatives, resulting in low engagement and limited user participation despite strong intent.
-          </p>
-        </div>
-
-        <!-- OPPORTUNITY -->
-        <div class="cs-section">
-          <p class="cs-section-label">Opportunity</p>
-          <p class="cs-section-text">
-            By structuring content and simplifying user pathways, the platform could move from passive information display to active community engagement.
-          </p>
-        </div>
-
-        <!-- APPROACH -->
-        <div class="cs-section">
-          <p class="cs-section-label">Approach</p>
-          <p class="cs-section-text">
-            I approached the platform as a system of communication and participation — focusing on how users discover initiatives, understand purpose, and take action.
-          </p>
-
-          <p class="cs-section-text" style="margin-top:10px;">
-            The goal was to reduce ambiguity and create a clear path from awareness to involvement.
-          </p>
-        </div>
-
-        <img src="MacBook Air - 13 (4).png" alt="Purple Movement Platform" class="cs-visual-img" />
-
-        <!-- SOLUTION -->
-        <div class="cs-section">
-          <p class="cs-section-label">Solution</p>
-          <p class="cs-section-text">
-            Designed a structured digital platform that:
-          </p>
-
-          <ul class="cs-list">
-            <li>Clearly presents initiatives and their purpose</li>
-            <li>Organizes content for easy scanning and understanding</li>
-            <li>Guides users toward participation pathways</li>
-            <li>Maintains a consistent visual identity aligned with the community</li>
-          </ul>
-        </div>
-
-        <!-- EXPERIENCE DESIGN -->
-        <div class="cs-section">
-          <p class="cs-section-label">Experience Design</p>
-          <p class="cs-section-text">
-            The experience is built around three key stages:
-          </p>
-
-          <ul class="cs-list">
-            <li>Discover → Users understand the vision and initiatives</li>
-            <li>Connect → Users relate to the purpose and explore deeper</li>
-            <li>Participate → Users take action and engage with the community</li>
-          </ul>
-
-          <p class="cs-section-text" style="margin-top:10px;">
-            This structure ensures clarity while encouraging meaningful interaction.
-          </p>
-        </div>
-
-        <!-- KEY DECISIONS -->
-        <div class="cs-section">
-          <p class="cs-section-label">Key Decisions</p>
-          <ul class="cs-decisions">
-            <li>Prioritized clarity over visual complexity</li>
-            <li>Structured content to reduce cognitive load</li>
-            <li>Designed for storytelling and emotional connection</li>
-            <li>Focused on guiding user action, not just presenting information</li>
-          </ul>
-        </div>
-
-        <!-- TRADE OFFS -->
-        <div class="cs-section">
-          <p class="cs-section-label">Trade-offs</p>
-          <ul class="cs-decisions">
-            <li>Reduced visual experimentation to maintain clarity</li>
-            <li>Limited content density to avoid overwhelming users</li>
-            <li>Focused on core engagement flows rather than feature expansion</li>
-          </ul>
-        </div>
-
-        <!-- IMPACT -->
-        <div class="cs-section">
-          <p class="cs-section-label">Impact</p>
-          <p class="cs-section-text">
-            The redesigned platform improved clarity and accessibility, helping users better understand the community’s purpose and engage with its initiatives.
-          </p>
-
-          <p class="cs-section-text" style="margin-top:12px;">
-            By structuring the experience around participation, the platform shifts from passive browsing to active involvement.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-</section>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
