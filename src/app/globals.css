@@ -4,22 +4,20 @@
    ========================================================================== */
 
 :root {
-  /* Color Palette - Light Mode (Frozen Silver & Icy Blue) */
-  --bg: #f3f7fa;
-  --bg-dots: #d0dae5;
-  --text: #0f172a;
-  --text-muted: #475569;
-  --text-dim: #64748b;
-  --border: rgba(255, 255, 255, 0.5);
-  --border-hover: #93c5fd;
-  --accent: #0284c7;
-  --accent-light: rgba(2, 132, 199, 0.08);
-  --card-bg: rgba(255, 255, 255, 0.45);
-  --card-glow: rgba(2, 132, 199, 0.02);
-  --header-bg: rgba(243, 247, 250, 0.65);
-  --bg-flare: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
-
-
+  /* Color Palette - Light Mode (Cold Winter Tone) */
+  --bg: #f1f7fc;
+  --bg-dots: #cbdde8;
+  --text: #091829;
+  --text-muted: #3b5166;
+  --text-dim: #58748f;
+  --border: rgba(203, 221, 232, 0.5);
+  --border-hover: #60a5fa;
+  --accent: #2563eb;
+  --accent-light: rgba(37, 99, 235, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.5);
+  --card-glow: rgba(37, 99, 235, 0.02);
+  --header-bg: rgba(241, 247, 252, 0.75);
+  --bg-flare: radial-gradient(circle, rgba(96, 165, 250, 0.08) 0%, transparent 70%);
 
   /* Spacing */
   --max-width: 1200px;
@@ -27,21 +25,21 @@
   --transition-fast: all 0.25s ease;
 }
 
-/* Dark Mode Variables - Glacial Abyss & Northern Lights */
+/* Dark Mode Variables - Glacial Abyss (Cold Winter Tone) */
 :root.dark {
-  --bg: #070c14;
-  --bg-dots: #1e293b;
-  --text: #f1f5f9;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
-  --border: rgba(255, 255, 255, 0.07);
+  --bg: #020713;
+  --bg-dots: #0e1829;
+  --text: #f3f8fc;
+  --text-muted: #90a4be;
+  --text-dim: #677b96;
+  --border: rgba(255, 255, 255, 0.06);
   --border-hover: #38bdf8;
   --accent: #38bdf8;
   --accent-light: rgba(56, 189, 248, 0.08);
-  --card-bg: rgba(8, 13, 22, 0.45);
+  --card-bg: rgba(9, 19, 36, 0.55);
   --card-glow: rgba(56, 189, 248, 0.015);
-  --header-bg: rgba(7, 12, 20, 0.65);
-  --bg-flare: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
+  --header-bg: rgba(2, 7, 19, 0.7);
+  --bg-flare: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
 }
 
 /* ==========================================================================
@@ -49,135 +47,136 @@
    ========================================================================== */
 
 /* --- SPRING (Sakura Pink & Indigo Cherry) --- */
+/* --- SPRING (Feels Normal - Balanced Slate-Green & Clean Charcoal) --- */
 :root.season-spring {
-  --bg: #fcf6f7;
-  --bg-dots: #e9d3d6;
-  --text: #1e1113;
-  --text-muted: #5f4b4e;
-  --text-dim: #887073;
-  --border: rgba(233, 211, 214, 0.5);
-  --border-hover: #f472b6;
-  --accent: #db2777;
-  --accent-light: rgba(219, 39, 119, 0.08);
-  --card-bg: rgba(255, 255, 255, 0.55);
-  --card-glow: rgba(219, 39, 119, 0.02);
-  --header-bg: rgba(252, 246, 247, 0.7);
-  --bg-flare: radial-gradient(circle, rgba(251, 113, 133, 0.12) 0%, transparent 70%);
+  --bg: #fcfdfd;
+  --bg-dots: #e2e8f0;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #64748b;
+  --border: rgba(203, 213, 225, 0.4);
+  --border-hover: #10b981;
+  --accent: #059669;
+  --accent-light: rgba(5, 150, 105, 0.06);
+  --card-bg: rgba(255, 255, 255, 0.65);
+  --card-glow: rgba(5, 150, 105, 0.015);
+  --header-bg: rgba(252, 253, 253, 0.75);
+  --bg-flare: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
 }
 
 :root.dark.season-spring {
-  --bg: #140a0e;
-  --bg-dots: #2f1821;
-  --text: #fceef2;
-  --text-muted: #c9abb3;
-  --text-dim: #9f7d85;
-  --border: rgba(252, 238, 242, 0.07);
-  --border-hover: #fda4af;
-  --accent: #f472b6;
-  --accent-light: rgba(244, 114, 182, 0.08);
-  --card-bg: rgba(23, 10, 16, 0.55);
-  --card-glow: rgba(244, 114, 182, 0.015);
-  --header-bg: rgba(20, 10, 14, 0.7);
-  --bg-flare: radial-gradient(circle, rgba(244, 114, 182, 0.18) 0%, transparent 70%);
+  --bg: #0b0f17;
+  --bg-dots: #1e293b;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --border: rgba(255, 255, 255, 0.06);
+  --border-hover: #34d399;
+  --accent: #10b981;
+  --accent-light: rgba(16, 185, 129, 0.08);
+  --card-bg: rgba(15, 23, 42, 0.45);
+  --card-glow: rgba(16, 185, 129, 0.015);
+  --header-bg: rgba(11, 15, 23, 0.7);
+  --bg-flare: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
 }
 
-/* --- SUMMER (Amber Gold & Warm Ivory) --- */
+/* --- SUMMER (Warm Tone - Golden Amber & Warm Cream) --- */
 :root.season-summer {
-  --bg: #faf8f5;
+  --bg: #fcfaf7;
   --bg-dots: #ebdcc6;
-  --text: #221908;
-  --text-muted: #61553f;
-  --text-dim: #877960;
+  --text: #2c1e08;
+  --text-muted: #6b5d49;
+  --text-dim: #8a7b64;
   --border: rgba(235, 220, 198, 0.5);
-  --border-hover: #fbbf24;
-  --accent: #b45309;
-  --accent-light: rgba(180, 83, 9, 0.08);
-  --card-bg: rgba(255, 255, 255, 0.55);
-  --card-glow: rgba(180, 83, 9, 0.02);
-  --header-bg: rgba(250, 248, 245, 0.7);
-  --bg-flare: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+  --border-hover: #eab308;
+  --accent: #ca8a04;
+  --accent-light: rgba(202, 138, 4, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.65);
+  --card-glow: rgba(202, 138, 4, 0.02);
+  --header-bg: rgba(252, 250, 247, 0.75);
+  --bg-flare: radial-gradient(circle, rgba(234, 179, 8, 0.1) 0%, transparent 70%);
 }
 
 :root.dark.season-summer {
-  --bg: #120d06;
-  --bg-dots: #2c2111;
+  --bg: #14100a;
+  --bg-dots: #2d2417;
   --text: #faf6f0;
   --text-muted: #cabaa4;
   --text-dim: #9c8a70;
   --border: rgba(250, 246, 240, 0.06);
   --border-hover: #fbbf24;
-  --accent: #fbbf24;
-  --accent-light: rgba(251, 191, 36, 0.08);
-  --card-bg: rgba(21, 15, 7, 0.55);
-  --card-glow: rgba(251, 191, 36, 0.015);
-  --header-bg: rgba(18, 13, 6, 0.7);
-  --bg-flare: radial-gradient(circle, rgba(251, 191, 36, 0.18) 0%, transparent 70%);
+  --accent: #f59e0b;
+  --accent-light: rgba(245, 158, 11, 0.08);
+  --card-bg: rgba(27, 21, 14, 0.5);
+  --card-glow: rgba(245, 158, 11, 0.015);
+  --header-bg: rgba(20, 16, 10, 0.7);
+  --bg-flare: radial-gradient(circle, rgba(245, 158, 11, 0.18) 0%, transparent 70%);
 }
 
-/* --- MONSOON (Stormy Teal & Cool Mist) --- */
+/* --- MONSOON (Cool Tone - Stormy Slate-Teal & Misty Ocean) --- */
 :root.season-monsoon {
-  --bg: #f0f4f5;
-  --bg-dots: #d0dadf;
-  --text: #0b1a20;
-  --text-muted: #435860;
-  --text-dim: #627880;
-  --border: rgba(208, 218, 223, 0.5);
-  --border-hover: #0d9488;
-  --accent: #0f766e;
-  --accent-light: rgba(15, 118, 110, 0.08);
-  --card-bg: rgba(255, 255, 255, 0.5);
-  --card-glow: rgba(15, 118, 110, 0.02);
-  --header-bg: rgba(240, 244, 245, 0.7);
+  --bg: #edf3f5;
+  --bg-dots: #cad4d9;
+  --text: #0b1c24;
+  --text-muted: #435b66;
+  --text-dim: #627c8a;
+  --border: rgba(202, 212, 217, 0.5);
+  --border-hover: #0891b2;
+  --accent: #0d9488;
+  --accent-light: rgba(13, 148, 136, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.55);
+  --card-glow: rgba(13, 148, 136, 0.02);
+  --header-bg: rgba(237, 243, 245, 0.75);
   --bg-flare: radial-gradient(circle, rgba(20, 184, 166, 0.1) 0%, transparent 70%);
 }
 
 :root.dark.season-monsoon {
-  --bg: #060b0e;
-  --bg-dots: #18282f;
+  --bg: #060d12;
+  --bg-dots: #17232e;
   --text: #eef6f9;
   --text-muted: #a0b9c3;
   --text-dim: #7293a0;
   --border: rgba(238, 246, 249, 0.07);
   --border-hover: #2dd4bf;
-  --accent: #2dd4bf;
-  --accent-light: rgba(45, 212, 191, 0.08);
-  --card-bg: rgba(8, 14, 18, 0.55);
-  --card-glow: rgba(45, 212, 191, 0.015);
-  --header-bg: rgba(6, 11, 14, 0.7);
-  --bg-flare: radial-gradient(circle, rgba(45, 212, 191, 0.18) 0%, transparent 70%);
+  --accent: #14b8a6;
+  --accent-light: rgba(20, 184, 166, 0.08);
+  --card-bg: rgba(10, 19, 26, 0.55);
+  --card-glow: rgba(20, 184, 166, 0.015);
+  --header-bg: rgba(6, 13, 18, 0.7);
+  --bg-flare: radial-gradient(circle, rgba(20, 184, 166, 0.18) 0%, transparent 70%);
 }
 
-/* --- WINTER (Icy Silver & Glacial Abyss) --- */
+/* --- WINTER (Cold Tone - Frosty White-Blue & Glacial Abyss) --- */
 :root.season-winter {
-  --bg: #f3f7fa;
-  --bg-dots: #d0dae5;
-  --text: #0f172a;
-  --text-muted: #475569;
-  --text-dim: #64748b;
-  --border: rgba(255, 255, 255, 0.5);
-  --border-hover: #93c5fd;
-  --accent: #0284c7;
-  --accent-light: rgba(2, 132, 199, 0.08);
-  --card-bg: rgba(255, 255, 255, 0.45);
-  --card-glow: rgba(2, 132, 199, 0.02);
-  --header-bg: rgba(243, 247, 250, 0.65);
-  --bg-flare: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
+  --bg: #f1f7fc;
+  --bg-dots: #cbdde8;
+  --text: #091829;
+  --text-muted: #3b5166;
+  --text-dim: #58748f;
+  --border: rgba(203, 221, 232, 0.5);
+  --border-hover: #60a5fa;
+  --accent: #2563eb;
+  --accent-light: rgba(37, 99, 235, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.5);
+  --card-glow: rgba(37, 99, 235, 0.02);
+  --header-bg: rgba(241, 247, 252, 0.7);
+  --bg-flare: radial-gradient(circle, rgba(96, 165, 250, 0.08) 0%, transparent 70%);
 }
 
 :root.dark.season-winter {
-  --bg: #070c14;
-  --bg-dots: #1e293b;
-  --text: #f1f5f9;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
-  --border: rgba(255, 255, 255, 0.07);
+  --bg: #020713;
+  --bg-dots: #0e1829;
+  --text: #f3f8fc;
+  --text-muted: #90a4be;
+  --text-dim: #677b96;
+  --border: rgba(255, 255, 255, 0.06);
   --border-hover: #38bdf8;
   --accent: #38bdf8;
   --accent-light: rgba(56, 189, 248, 0.08);
-  --card-bg: rgba(8, 13, 22, 0.45);
+  --card-bg: rgba(9, 19, 36, 0.55);
   --card-glow: rgba(56, 189, 248, 0.015);
-  --header-bg: rgba(7, 12, 20, 0.65);
-  --bg-flare: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
+  --header-bg: rgba(2, 7, 19, 0.7);
+  --bg-flare: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
 }
 
 
