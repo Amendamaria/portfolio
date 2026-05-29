@@ -23,12 +23,20 @@ document.addEventListener("DOMContentLoaded", () => {
 function initMobileMenu() {
   const menuBtn = document.getElementById("menu-btn");
   const nav = document.getElementById("topbar-nav");
+  const header = document.querySelector("header");
 
   if (!menuBtn || !nav) return;
 
   menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("open");
+    const isOpen = menuBtn.classList.toggle("open");
     nav.classList.toggle("open");
+    if (header) {
+      if (isOpen) {
+        header.classList.add("menu-open");
+      } else {
+        header.classList.remove("menu-open");
+      }
+    }
   });
 
   // Close nav on clicking links
@@ -37,6 +45,9 @@ function initMobileMenu() {
     link.addEventListener("click", () => {
       menuBtn.classList.remove("open");
       nav.classList.remove("open");
+      if (header) {
+        header.classList.remove("menu-open");
+      }
     });
   });
 }

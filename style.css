@@ -298,7 +298,8 @@ header {
   transition: background-color 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
 }
 
-header.scrolled {
+header.scrolled,
+header.menu-open {
   background-color: var(--header-bg);
   backdrop-filter: blur(12px) saturate(185%);
   -webkit-backdrop-filter: blur(12px) saturate(185%);
@@ -306,7 +307,8 @@ header.scrolled {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
 }
 
-.dark header.scrolled {
+.dark header.scrolled,
+.dark header.menu-open {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -448,7 +450,9 @@ body.dark .theme-toggle,
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--bg);
+    background-color: var(--header-bg);
+    backdrop-filter: blur(12px) saturate(185%);
+    -webkit-backdrop-filter: blur(12px) saturate(185%);
     border-bottom: 1px solid var(--border);
     flex-direction: column;
     padding: 24px 0 32px;
@@ -1904,5 +1908,85 @@ body.dark .contact-form,
   input,
   textarea {
     cursor: none;
+  }
+}
+
+/* ==========================================================================
+   MOBILE PORTRAIT VISUAL OVERRIDES (max-width: 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Section Padding reduction to fit screen height gracefully */
+  .hero,
+  .about,
+  .work,
+  .hid,
+  .skills-section,
+  .experience-section,
+  .cs-portal-hero,
+  .cs-portal-grid,
+  .cs-detail-hero,
+  .cs-detail-body,
+  .contact-page,
+  .next-cs-nav {
+    padding: 56px 0;
+  }
+
+  /* Hero adjustments */
+  .hero {
+    padding-top: 80px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .hero-cta .btn-link {
+    justify-content: center;
+    padding: 12px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--text);
+  }
+
+  /* Section header adjustments */
+  .section-header-no-line {
+    margin-bottom: 32px;
+  }
+
+  /* Case study metadata strip */
+  .cs-meta-strip {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 24px;
+    margin-top: 24px;
+  }
+
+  /* Contact page form layout */
+  .contact-form {
+    padding: 28px 20px;
+    gap: 20px;
+  }
+
+  /* Details typography scale */
+  .p-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .principle {
+    grid-template-columns: 40px 1fr;
+    gap: 12px;
+    padding: 24px 0;
+  }
+
+  /* Exp item */
+  .exp-item {
+    padding-left: 24px;
+    padding-bottom: 36px;
   }
 }
