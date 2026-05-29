@@ -19,9 +19,7 @@
   --header-bg: rgba(243, 247, 250, 0.65);
   --bg-flare: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
 
-  /* Fonts & Weights */
-  --font-serif: var(--font-serif), 'Playfair Display', Georgia, serif;
-  --font-sans: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
 
   /* Spacing */
   --max-width: 1200px;
@@ -204,7 +202,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: transparent;
   color: var(--text);
   line-height: 1.625;
@@ -217,7 +215,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-serif), 'Playfair Display', Georgia, serif;
 }
 
 /* Systems Design Grid Background Pattern */
