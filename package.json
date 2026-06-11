@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "npx -y serve .",
+    "build": "echo 'No build step required for vanilla HTML'",
+    "start": "npx -y serve ."
   },
   "dependencies": {
     "@types/three": "^0.184.1",
+    "meshoptimizer": "^1.1.1",
     "next": "16.2.6",
+    "pngjs": "^7.0.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "three": "^0.184.0"

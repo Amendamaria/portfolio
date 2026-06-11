@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/neuux", "destination": "/case-study-neuux.html" },
+    { "source": "/medico", "destination": "/case-study-medico.html" },
+    { "source": "/beyond-syllabus", "destination": "/case-study-beyond-syllabus.html" },
+    { "source": "/purple-movement", "destination": "/case-study-purple-movement.html" }
+  ]
+}

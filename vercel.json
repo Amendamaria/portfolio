@@ -1,0 +1,45 @@
+{
+  "framework": null,
+  "cleanUrls": true,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/case-study-neuux", "destination": "/neuux", "permanent": true },
+    { "source": "/case-study-medico", "destination": "/medico", "permanent": true },
+    { "source": "/case-study-beyond-syllabus", "destination": "/beyond-syllabus", "permanent": true },
+    { "source": "/case-study-purple-movement", "destination": "/purple-movement", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/neuux", "destination": "/case-study-neuux.html" },
+    { "source": "/medico", "destination": "/case-study-medico.html" },
+    { "source": "/beyond-syllabus", "destination": "/case-study-beyond-syllabus.html" },
+    { "source": "/purple-movement", "destination": "/case-study-purple-movement.html" }
+  ]
+}
